@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Site</title>
+
+
+  <!-- BS 5 -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav w-100 justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#intro-section">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#profile-section">Profile</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#experience-section">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills-section">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#bottom-section">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Top container = Introducion -->
+  <section id="intro-section">
+    <div class="name">
+      <!-- <h3>Hello I'm</h3> -->
+      <h1>I'm Gabriela.</h1>
+      <h3>Software Developer</h3>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section id="profile-section">
+    <div id="profile-container" class="container">
+      <h2 class="display-4">Profile</h2>
+      <hr class="my-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>About me</h4>
+          <p>I have more than <b>4 years of experience</b> in the field of <b>Embedded C/C++ and GUI application.</b>
+            I am also interested in Web Design, Web Development and Mobile Application. </p>
+        </div>
+
+        <div class="col-md-4">
+          <h4>Contact Details</h4>
+          <p>
+            <b>Name</b><br>
+            Gabriela Christy<br>
+
+            <b>Email</b><br>
+            gabrielamolly0205@gmail.com<br>
+
+            <b>Address</b><br>
+            Gandhinagar, Gujarat<br>
+
+            <b>Nationality</b><br>
+            Indian<br>
+
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="experience-section">
+    <div id="experience-container" class="container">
+      <h2 class="display-4">Experience</h2>
+      <hr class="my-4">
+
+      <!-- Capgemini experience -->
+      <div class="experience row">
+        <div class="col-md-4">
+          <h4>Capgemini</h4>
+          <p>Nov 2019 - Present</p>
+        </div>
+
+        <div class="col-md-8">
+          <h5>Associate Consultant</h5>
+          <p>Working on medical device with Embedded C++ platform. Also worked on Qt/QML GUI based application
+            interface with C++. I also got introduced working with Git.</p>
+        </div>
+      </div>
+
+      <!-- Nanosoft experience -->
+      <div class="experience row">
+        <div class="col-md-4">
+          <h4>Nanosoft</h4>
+          <p>April 2017 - Nov 2019</p>
+        </div>
+
+        <div class="col-md-8">
+          <h5>Embedded Software Developer</h5>
+          <p>I worked on GPS, GSM based projects. The projects mainly include Vehicle Tracking System that shows user live and offline track with SOS facility.
+            User interactive by SMS facility and Online-Tracking by MQTT protocol.
+            I have also developed Hardware test code for Production Team.</p>
+
+          <p><b>Technology: </b>Embedded C, GSM, GPS, MQTT protocol, SPI, I2C</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills section -->
+  <section id="skills-section">
+    <div class="skills-container container">
+      <h2 class="display-4">Skills</h2>
+      <hr class="my-4">
+      <div class="skills row">
+        <div class="col-md-6">
+          <ul class="skill-ul">
+            <li class="skill-list">
+              <span class="skill-title">C/C++</span>
+              <span class="skill-score">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </span>
+            </li>
+
+            <li class="skill-list">
+              <span class="skill-title">Object Oriented Programming</span>
+              <span class="skill-score">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </span>
+            </li>
+
+            <li class="skill-list">
+              <span class="skill-title">Qt/QML</span>
+              <span class="skill-score">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </span>
+            </li>
+
+            <li class="skill-list">
+              <span class="skill-title">HTML</span>
+              <span class="skill-score">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </span>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-md-6">
+          <ul class="skill-ul">
+            <li class="skill-list">
+              <span class="skill-title">CSS</span>
+              <span class="skill-score">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </span>
+            </li>
+
+            <li class="skill-list">
+              <span class="skill-title">BootStrap Framework</span>
+              <span class="skill-score">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </span>
+            </li>
+
+            <li class="skill-list">
+              <span class="skill-title">Javascript</span>
+              <span class="skill-score">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </span>
+            </li>
+
+            <li class="skill-list">
+              <span class="skill-title">JQuery</span>
+              <span class="skill-score">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+  <!-- Bottom container -->
+  <section id="bottom-section">
+    <div class="contact-container container">
+      <h2 class="display-4">Contact</h2>
+      <hr class="my-4">
+
+        <!-- <div class="container"> -->
+          <div class="contact row">
+            <div class="contact-column col-md-6">
+              <form class="" action="mailto:gabrielamolly0205@gmail.com" method="post">
+                <input size="35" placeholder="NAME" type="text" name="contactName" value=""><br>
+                <input size="35" placeholder="EMAIL" type="email" name="contactEmail" value=""><br>
+                <textarea placeholder="MESSAGE" name="contactMessage" rows="8" cols="40"></textarea><br>
+                <button type="button" class="btn btn-dark">Submit</button>
+              </form>
+            </div>
+
+            <div class="contact-column col-md-6" style="text-align: left;">
+              <h5>Contact Address</h5>
+              <div class="contact-address">
+                <a class="address" target="_blank" href="http://maps.google.com/?q=Gandhinagar,Gujarat">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Gandhinagar, Gujarat, India</span>
+                  </a>
+              </div>
+
+              <div class="contact-address">
+                <a class="mail" href="mailto:gabrielamolly0205@gmail.com">
+                    <i class="bi bi-envelope-fill"></i>
+                    <span class="mail-id">gabrielamolly0205@gmail.com</span>
+                  </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        <!-- </div> -->
+
+
+
+
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>

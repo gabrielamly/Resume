@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+body {
+  text-align: center;
+  position: relative;
+}
+
+html {
+  height: 100%;
+}
+
+div {
+  display: block;
+}
+
+/* Navbar */
+
+.nav-item {
+  margin-right: 10px;
+}
+.active {
+  background-color: #a58faa;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* Top section = Introduction */
+#intro-section {
+  /* background-color: #E4F9F5; */
+  background-image: url("fruits_light.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height:100vh;
+  position: relative;
+  font-weight: lighter;
+  color: whitesmoke;
+}
+
+.name {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+}
+
+/* profile section */
+#profile-container {
+  padding: 6% 10% 10%;
+}
+
+#profile-container .row .col-md-6 {
+  margin-right: 25px;
+}
+#profile-container .row {
+  text-align:  justify;
+  padding-top:2%;
+}
+
+/* experience section */
+
+#experience-section {
+  background-color:#fcecdd;
+}
+#experience-container{
+  padding: 6% 10%;
+
+}
+
+.experience {
+  text-align: left;
+  padding-top:2%;
+
+}
+ /* Skills */
+ #skills-section {
+   /* background-color: #98ddca; */
+   background-color: floralwhite;
+ }
+
+.skills-container {
+   padding: 6% 10%;
+}
+
+.skill-ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.skill-list {
+  margin-bottom: 2%;
+}
+.skill-title {
+  display: inline-block;  /* inline-block to set height and width*/
+  width: 60%;
+}
+
+.skill-score {
+  color: cornflowerblue;
+  position: absolute;
+  right:4%;
+}
+
+
+.skills {
+  padding-top:2%;
+}
+
+/* bottom container */
+#bottom-section{
+  min-height: 100vh;
+  background-color: gray;
+}
+
+.contact-container {
+   padding: 2% 8% 0;
+
+}
+
+.contact-container form {
+  text-align: left;
+}
+
+.contact-container input {
+  margin-bottom: 20px;
+}
+
+.contact-address {
+  margin: 5% 0;
+}
+
+/* .contact-column {
+  margin-top: 2%;
+  margin-right: 2%;
+} */
+
+.mail, .address {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.mail-id {
+  padding-left: 1%;
+}
+
+.mail:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.address:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+.highlight {
+  background: #d5ecc2;
+  font-weight: bold;
+}
