@@ -5,8 +5,8 @@ $(document).ready(function() {
     console.log(navbarHeight);
     var targetHref = $(this).attr('href');
 
-    $(".nav-link").removeClass("active");
-    $(this).addClass("active");
+    //$(".nav-link").removeClass("active");
+    //$(this).addClass("active");
 
     $("html, body").animate({
       scrollTop: $(targetHref).offset().top - navbarHeight  // Add it to the calculation here
@@ -15,27 +15,27 @@ $(document).ready(function() {
   });
 
 // scroll on document page
-$(document).on("scroll", onScroll);
-
-function onScroll(event) {
-  var scrollPos = $(document).scrollTop();
-  $("#navbarSupportedContent a").each(function() {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-    var topPosition = refElement.position().top;
-    var height = topPosition + refElement.height();
-
-    if(topPosition <= scrollPos && topPosition + height > scrollPos)
-    {
-      $("#navbarSupportedContent ul li a").removeClass("active");
-      currLink.addClass("active");
-    }
-    else {
-      currLink.removeClass("active");
-    }
-
-  });
-}
+// $(document).on("scroll", onScroll);
+//
+// function onScroll(event) {
+//   var scrollPos = $(document).scrollTop();
+//   $("#navbarSupportedContent a").each(function() {
+//     var currLink = $(this);
+//     var refElement = $(currLink.attr("href"));
+//     var topPosition = refElement.position().top;
+//     var height = topPosition + refElement.height();
+//
+//     if(topPosition <= scrollPos && topPosition + height > scrollPos)
+//     {
+//       $("#navbarSupportedContent ul li a").removeClass("active");
+//       currLink.addClass("active");
+//     }
+//     else {
+//       currLink.removeClass("active");
+//     }
+//
+//   });
+// }
   // hover
   $(".skill-list").hover(
 
