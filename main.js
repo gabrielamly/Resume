@@ -1,41 +1,63 @@
 $(document).ready(function() {
 
+ onScroll();  // investigate on scroll function on starting
+  // Page scroll
+  function onScrollFunc(){
+    $(document).on("scroll", onScroll);
+  }
+
+  function offScrollFunc(){
+    $(document).off("scroll");
+  }
+
+
+  function onScroll(event) {
+    console.log("inside on scroll");
+    var current;
+    // get the scroll position from Top
+    var scrollPos = $(document).scrollTop();
+
+
+    //get each section top position
+    $("section").each(function() {
+      var sectionTop = $(this).offset().top;
+      var sectionHeight = $(this).height();
+
+      if (scrollPos >= (sectionTop - sectionHeight/2)) {
+        current = $(this).attr("id");
+      }
+    }); // end of each section function
+    console.log(current);
+
+    $("#navbarSupportedContent ul li a").each(function() {
+      $(this).removeClass("active");
+      //  console.log("active class removed");
+      if ($("#navbarSupportedContent ul li a").hasClass(current)) {
+        $("#navbarSupportedContent ul li ." + current).addClass("active");
+      }
+
+    }); //end of navbarSupportedContent each function
+
+  } // end of onScroll function
+
   $(".nav-link").click(function(event) {
+    event.preventDefault(); // to prevent href added in path - file:///D:/Gabriela/Web%20Development/MySite/index.html#skills-section
+    offScrollFunc();
+
     var navbarHeight = $("nav").outerHeight();
-    console.log(navbarHeight);
     var targetHref = $(this).attr('href');
 
-    //$(".nav-link").removeClass("active");
-    //$(this).addClass("active");
+    $(".nav-link").removeClass("active");
+    $(this).addClass("active");
 
     $("html, body").animate({
-      scrollTop: $(targetHref).offset().top - navbarHeight  // Add it to the calculation here
-    }, 1000);
-    event.preventDefault(); // to prevent href added in path - file:///D:/Gabriela/Web%20Development/MySite/index.html#skills-section
-  });
+      scrollTop: $(targetHref).offset().top - navbarHeight // Add it to the calculation here
+    }, 1000, function() {
+      onScrollFunc();
+    });
 
-// scroll on document page
-// $(document).on("scroll", onScroll);
-//
-// function onScroll(event) {
-//   var scrollPos = $(document).scrollTop();
-//   $("#navbarSupportedContent a").each(function() {
-//     var currLink = $(this);
-//     var refElement = $(currLink.attr("href"));
-//     var topPosition = refElement.position().top;
-//     var height = topPosition + refElement.height();
-//
-//     if(topPosition <= scrollPos && topPosition + height > scrollPos)
-//     {
-//       $("#navbarSupportedContent ul li a").removeClass("active");
-//       currLink.addClass("active");
-//     }
-//     else {
-//       currLink.removeClass("active");
-//     }
-//
-//   });
-// }
+  }); //end of click function on navbar
+
   // hover
   $(".skill-list").hover(
 
@@ -55,5 +77,5 @@ $(document).ready(function() {
         marginLeft: "0px"
       });
   }
-  );
-});
+);  // end of hover function
+}); // End of document.ready
